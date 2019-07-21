@@ -2,6 +2,9 @@
 #    path: /
 #    controller: App\Controller\DefaultController::index
 
+api_login_check:
+    path: /api/login_check
+
 lists:
   type:     rest
   resource: App\Controller\ListController
