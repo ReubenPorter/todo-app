@@ -90,6 +90,9 @@
             "./config/packages/fos_rest.yaml"
         ]
     },
+    "gesdinet/jwt-refresh-token-bundle": {
+        "version": "v0.7.1"
+    },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
@@ -110,6 +113,18 @@
     },
     "namshi/jose": {
         "version": "7.2.3"
+    },
+    "nelmio/cors-bundle": {
+        "version": "1.5",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.5",
+            "ref": "6e1f64cc0f55362be49764634e8f14ce34a033c6"
+        },
+        "files": [
+            "./config/packages/nelmio_cors.yaml"
+        ]
     },
     "nikic/php-parser": {
         "version": "v4.2.2"
@@ -149,6 +164,9 @@
         "files": [
             "./config/packages/sensio_framework_extra.yaml"
         ]
+    },
+    "symfony/asset": {
+        "version": "v4.3.3"
     },
     "symfony/cache": {
         "version": "v4.3.1"
@@ -208,6 +226,9 @@
             "./.env"
         ]
     },
+    "symfony/form": {
+        "version": "v4.3.2"
+    },
     "symfony/framework-bundle": {
         "version": "4.2",
         "recipe": {
@@ -236,6 +257,9 @@
     "symfony/inflector": {
         "version": "v4.3.1"
     },
+    "symfony/intl": {
+        "version": "v4.3.2"
+    },
     "symfony/maker-bundle": {
         "version": "1.0",
         "recipe": {
@@ -248,8 +272,14 @@
     "symfony/mime": {
         "version": "v4.3.1"
     },
+    "symfony/options-resolver": {
+        "version": "v4.3.2"
+    },
     "symfony/orm-pack": {
         "version": "v1.0.6"
+    },
+    "symfony/polyfill-intl-icu": {
+        "version": "v1.11.0"
     },
     "symfony/polyfill-intl-idn": {
         "version": "v1.11.0"
@@ -325,6 +355,19 @@
     },
     "symfony/templating": {
         "version": "v4.3.1"
+    },
+    "symfony/translation": {
+        "version": "3.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.3",
+            "ref": "2ad9d2545bce8ca1a863e50e92141f0b9d87ffcd"
+        },
+        "files": [
+            "./config/packages/translation.yaml",
+            "./translations/.gitignore"
+        ]
     },
     "symfony/translation-contracts": {
         "version": "v1.1.5"

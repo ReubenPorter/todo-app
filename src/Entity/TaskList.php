@@ -41,6 +41,32 @@ class TaskList
      */
     private $tasks;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="lists")
+     */
+    private $user;
+
+    /**
+     * @ORM\OneToOne(targetEntity="App\Entity\Preference", mappedBy="list", cascade={"PERSIST", "REMOVE"})
+     */
+    private $preference;
+
+    /**
+     * @return mixed
+     */
+    public function getPreference()
+    {
+        return $this->preference;
+    }
+
+    /**
+     * @param mixed $preference
+     */
+    public function setPreference($preference): void
+    {
+        $this->preference = $preference;
+    }
+
     public function __construct()
     {
         $this->tasks = new ArrayCollection();
@@ -114,6 +140,18 @@ class TaskList
                 $task->setList(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getUser(): ?User
+    {
+        return $this->user;
+    }
+
+    public function setUser(?User $user): self
+    {
+        $this->user = $user;
 
         return $this;
     }
